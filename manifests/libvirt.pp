@@ -31,5 +31,5 @@ class katellovirt::libvirt {
     target => "/etc/sysconfig/iptables-config",
     value  => "nf_conntrack_tftp nf_nat_tftp",
   } ~>
-  service { 'iptables': }
+  Service['iptables']
 }
