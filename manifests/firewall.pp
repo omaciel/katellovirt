@@ -7,6 +7,7 @@ class katellovirt::firewall {
     require => Class['::katellovirt::firewall::pre'],
   }
   class { ['::katellovirt::firewall::pre',
+           '::katellovirt::firewall::katello',
            '::katellovirt::firewall::provisioning',
            '::katellovirt::firewall::post']: }
   class { '::firewall': }

@@ -34,4 +34,10 @@ class katellovirt::firewall::provisioning {
     proto  => udp,
     action => accept,
   }
+
+  firewall { '140 accept libvirt TCP':
+    port   => 16509,
+    proto  => udp,
+    action => accept,
+  }
 }
