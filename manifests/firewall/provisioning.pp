@@ -40,4 +40,16 @@ class katellovirt::firewall::provisioning {
     proto  => udp,
     action => accept,
   }
+
+  firewall { '150 accept libvirt VNC':
+    port   => '5910-5919',
+    proto  => tcp,
+    action => accept,
+  }
+
+  firewall { '151 accept websocket VNC':
+    port   => '5900-5909',
+    proto  => tcp,
+    action => accept,
+  }
 }

@@ -1,5 +1,5 @@
 name    'domcleal-katellovirt'
-version '0.2.1'
+version '0.2.2'
 source 'git://github.com/domcleal/katellovirt'
 author 'Dominic Cleal'
 license 'Apache License, Version 2.0'
