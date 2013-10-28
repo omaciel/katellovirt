@@ -5,6 +5,12 @@ class katellovirt::firewall::provisioning {
     action => accept,
   }
 
+  firewall { '105 accept foreman proxy':
+    port   => 9090,
+    proto  => tcp,
+    action => accept,
+  }
+
   firewall { '110 accept puppet':
     port   => 8140,
     proto  => tcp,
